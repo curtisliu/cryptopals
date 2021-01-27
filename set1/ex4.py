@@ -9,4 +9,6 @@ def detect_single_byte_xor(strings):
 
 with open('set1/4.txt', 'r') as f:
   results = detect_single_byte_xor(f.readlines())
-  print(results[0][0], results[0][1])
+  print('Result:', results[0][1][1])
+  print('Key:', results[0][1][0])
+  print('Score:', results[0][0])
